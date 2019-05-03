@@ -1,0 +1,5 @@
+<ul>
+  <% @teachers.each do |teacher| %>
+    <li><%= teacher.name %> - <%= teacher.subject.name %></li>
+  <% end %>
+</ul>
