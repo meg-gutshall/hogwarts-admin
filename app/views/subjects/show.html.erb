@@ -1,7 +1,11 @@
 <h1><%= @subject.name %></h1>
 
+<h2>Teacher</h2>
+<p><%= link_to @subject.teacher.name, house_teacher_path(@subject.teacher.house, @subject.teacher) %></p>
+
+<h2>Students</h2>
 <ul>
-  <% @subject.students.each do |stu| %>
-    <li><%= stu.name %></li>
+  <% @subject.students.each do |student| %>
+    <li><%= link_to student.name, house_student_path(student.house, student) %></li>
   <% end %>
 </ul>

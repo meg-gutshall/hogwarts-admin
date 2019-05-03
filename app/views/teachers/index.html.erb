@@ -6,6 +6,6 @@
 
 <ul>
   <% @teachers.each do |teacher| %>
-    <li><%= link_to teacher.name, house_teacher_path(teacher.house, teacher) %> - <%= teacher.subject.name %></li>
+    <li><%= link_to teacher.name, house_teacher_path(teacher.house, teacher) %> - <%= link_to teacher.subject.name, subject_path(teacher.subject) %></li>
   <% end %>
 </ul>

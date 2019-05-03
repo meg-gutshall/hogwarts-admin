@@ -1,7 +1,7 @@
 <h1>Subjects</h1>
 
 <ul>
-  <% @subjects.each do |sub| %>
-    <li><%= sub.name %> - <%= sub.teacher.name %></li>
+  <% @subjects.each do |subject| %>
+    <li><%= link_to subject.name, subject_path(subject) %> - <%= link_to subject.teacher.name, house_teacher_path(subject.teacher.house, subject.teacher) %></li>
   <% end %>
 </ul>
