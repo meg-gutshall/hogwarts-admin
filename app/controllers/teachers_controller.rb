@@ -1,6 +1,11 @@
 class TeachersController < ApplicationController
   def index
-    @teachers = Teacher.all
+    if params[:house_id]
+      @house = House.find(params[:house_id])
+      @teachers = @house.teachers
+    else
+      @teachers = Teacher.all
+    end
   end
 
   def show
