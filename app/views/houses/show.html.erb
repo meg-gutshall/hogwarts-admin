@@ -1,0 +1,15 @@
+<h1><%= @house.name %></h1>
+
+<h2>Teachers</h2>
+<ul>
+  <% @house.teachers.each do |teacher| %>
+    <li><%= link_to teacher.name, teacher_path(teacher) %></li>
+  <% end %>
+</ul>
+
+<h2>Students</h2>
+<ul>
+  <% @house.students.each do |student| %>
+    <li><%= link_to student.name, student_path(student) %></li>
+  <% end %>
+</ul>
