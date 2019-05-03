@@ -9,6 +9,7 @@ hg = Student.create(name: 'Hermione Granger', house: gryff)
 cd = Student.create(name: 'Cedric Diggory', house: huff)
 ll = Student.create(name: 'Luna Lovegood', house: rav)
 dm = Student.create(name: 'Draco Malfoy', house: sly)
+nl = Student.create(name: 'Neville Longbottom', house: gryff)
 
 pmcg = Teacher.create(name: 'Minerva McGonagall', house: gryff)
 sprout = Teacher.create(name: 'Pomona Sprout', house: huff)
