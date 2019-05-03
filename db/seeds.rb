@@ -23,7 +23,6 @@ pot = Subject.create(name: 'Potions', teacher: snape)
 
 Signup.create(student: hp, subject: tran)
 Signup.create(student: hg, subject: tran)
-Signup.create(student: hg, subject: tran)
 Signup.create(student: hp, subject: pot)
 Signup.create(student: rw, subject: pot)
 Signup.create(student: hg, subject: pot)
