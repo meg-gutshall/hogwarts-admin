@@ -1,3 +1,9 @@
+<h1>Faculty</h1>
+
+<% if @house %>
+  <h2><%= @house.name %></h2>
+<% end %>
+
 <ul>
   <% @teachers.each do |teacher| %>
     <li><%= link_to teacher.name, house_teacher_path(teacher.house, teacher) %> - <%= teacher.subject.name %></li>
