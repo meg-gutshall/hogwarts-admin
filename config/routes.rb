@@ -10,6 +10,7 @@ Rails.application.routes.draw do
   resources :houses, only: [:index, :show]
 
   # Wishlist
+  # /teachers...
   # /students => shows all students with link to their show pages
   # /houses => shows all houses with links to their show pages
   # /houses/1 => shows first house with links to house's teachers and students show pages
